@@ -1,0 +1,74 @@
+{
+  "name": "QuesterProfile",
+  "type": "object",
+  "properties": {
+    "username": {
+      "type": "string"
+    },
+    "display_name": {
+      "type": "string"
+    },
+    "avatar_url": {
+      "type": "string"
+    },
+    "parish": {
+      "type": "string"
+    },
+    "level": {
+      "type": "number",
+      "default": 1
+    },
+    "xp": {
+      "type": "number",
+      "default": 0
+    },
+    "total_xp_earned": {
+      "type": "number",
+      "default": 0
+    },
+    "quests_completed": {
+      "type": "number",
+      "default": 0
+    },
+    "quests_posted": {
+      "type": "number",
+      "default": 0
+    },
+    "rating": {
+      "type": "number",
+      "default": 5.0
+    },
+    "total_ratings": {
+      "type": "number",
+      "default": 0
+    },
+    "completion_rate": {
+      "type": "number",
+      "default": 100
+    },
+    "badges": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "title": {
+      "type": "string",
+      "default": "Rookie Quester"
+    },
+    "bio": {
+      "type": "string"
+    },
+    "is_verified": {
+      "type": "boolean",
+      "default": false
+    },
+    "streak_days": {
+      "type": "number",
+      "default": 0
+    }
+  },
+  "required": [
+    "username"
+  ]
+}
