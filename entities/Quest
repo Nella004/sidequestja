@@ -1,0 +1,97 @@
+{
+  "name": "Quest",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "quest_type": {
+      "type": "string",
+      "enum": [
+        "photo",
+        "find_it",
+        "social",
+        "open_challenge",
+        "skill",
+        "vibes"
+      ],
+      "default": "vibes"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "open",
+        "in_progress",
+        "completed",
+        "expired",
+        "cancelled"
+      ],
+      "default": "open"
+    },
+    "xp_reward": {
+      "type": "number",
+      "default": 100
+    },
+    "bonus_xp": {
+      "type": "number",
+      "default": 0
+    },
+    "location": {
+      "type": "string"
+    },
+    "parish": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "string"
+    },
+    "expires_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "difficulty": {
+      "type": "string",
+      "enum": [
+        "easy",
+        "medium",
+        "hard",
+        "legendary"
+      ],
+      "default": "easy"
+    },
+    "poster_username": {
+      "type": "string"
+    },
+    "poster_level": {
+      "type": "number"
+    },
+    "poster_quests_count": {
+      "type": "number"
+    },
+    "accepted_count": {
+      "type": "number",
+      "default": 0
+    },
+    "max_questers": {
+      "type": "number",
+      "default": 1
+    },
+    "community_votes_enabled": {
+      "type": "boolean",
+      "default": false
+    },
+    "is_featured": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": [
+    "title",
+    "quest_type",
+    "xp_reward",
+    "location"
+  ]
+}
