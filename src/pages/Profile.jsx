@@ -48,7 +48,7 @@ export default function Profile() {
       {/* Header */}
       <div className="flex items-center justify-between mb-8">
         <h1 className="font-heading font-bold text-xl text-foreground">Profile</h1>
-       <button onClick={async () => { await supabase.auth.signOut(); window.location.href = '/login'; }} ...>
+       <button onClick={async () => { await supabase.auth.signOut(); window.location.href = '/login'; }} className="flex items-center gap-1.5 text-sm text-muted-foreground hover:text-destructive transition-colors">
           <LogOut className="w-4 h-4" />
           Sign out
         </button>
