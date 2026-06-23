@@ -1,0 +1,50 @@
+{
+  "name": "QuestSubmission",
+  "type": "object",
+  "properties": {
+    "quest_id": {
+      "type": "string"
+    },
+    "quester_username": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "pending",
+        "accepted",
+        "in_progress",
+        "submitted",
+        "approved",
+        "rejected"
+      ],
+      "default": "pending"
+    },
+    "proof_text": {
+      "type": "string"
+    },
+    "proof_image_url": {
+      "type": "string"
+    },
+    "rating_given": {
+      "type": "number"
+    },
+    "rating_received": {
+      "type": "number"
+    },
+    "review_text": {
+      "type": "string"
+    },
+    "community_votes": {
+      "type": "number",
+      "default": 0
+    },
+    "completed_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "quest_id"
+  ]
+}
